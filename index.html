@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <header class="w-8/10 mx-auto mt-15 space-y-8">
+
+
+        <!-- tacker section -->
+        <section>
+            <h1 class="text-3xl font-bold text-info-content">Job Application Tracker</h1>
+
+            <!--  cards -->
+            <div class="tracker-card-container mt-8 grid grid-cols-3 gap-5">
+
+                <!--  card -->
+                <div class="card  bg-base-100 card-xs shadow-sm p-5">
+                    <p>Total</p>
+                    <p id="total-job-application" class=" text-2xl font-bold text-info-content">0</p>
+                </div>
+                <!--  card -->
+                <div class="card  bg-base-100 card-xs shadow-sm p-5">
+                    <p>Interview</p>
+                    <p id="interview-job-application" class=" text-2xl font-bold text-success">0</p>
+                </div>
+                <!--  card -->
+                <div class="card  bg-base-100 card-xs shadow-sm p-5">
+                    <p>Rejected</p>
+                    <p id="rejected-job-application" class=" text-2xl font-bold text-red-400">0</p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <hr class="text-gray-300">
+    </header>
+
+
 </body>
+
 </html>
